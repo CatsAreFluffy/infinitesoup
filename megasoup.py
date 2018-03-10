@@ -24,8 +24,8 @@ def box(x0=-32,y0=-32,dx=64,dy=64,fill=50,liveout=False):
         print(out)
     rep=0
     char=""
-    for y in range(x0,x0+dx):
-        for x in range(y0,y0+dy):
+    for y in range(y0,y0+dy):
+        for x in range(x0,x0+dx):
             if generate(x,y)>(fill/100):
                 rleappend("A")
             else:
